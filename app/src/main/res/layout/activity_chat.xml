@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+>
+    <TextView android:layout_width="match_parent"
+              android:text="与xx聊天中"
+              android:textSize="20sp"
+              android:id="@+id/title"
+              android:textColor="#ffffff"
+              android:background="#1abc9c"
+              android:gravity="center"
+              android:layout_height="60dp"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:background="#00796B">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <EditText android:id="@+id/et_content"
+                  android:layout_width="0dp"
+                  android:layout_height="50dp"
+                  android:layout_weight="1"/>
+        <Button android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:text="发送"/>
+    </LinearLayout>
+</LinearLayout>

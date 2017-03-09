@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1abc9c"
+    android:orientation="vertical"
+    tools:context="com.docwei.xmppdemo.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@+id/tv_title"
+              android:textColor="#ffffff"
+              android:text="会话"
+              android:gravity="center"
+              android:textSize="20sp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:minHeight="?attr/actionBarSize"
+                                       />
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/vp"
+        android:layout_weight="1"
+    />
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_gravity="bottom"/>
+</LinearLayout>
